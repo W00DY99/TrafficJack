@@ -6,7 +6,7 @@ Traffic Jack is a Free Open Source Network Traffic Control Monitor designed to k
 
 With Traffic Jack, you'll have unparalleled visibility into your computer's network activity. Stay informed about every connection made, closely monitor the applications involved, and track the data being transmitted. Whether you're a tech enthusiast, a network administrator, or a security-conscious user, Traffic Jack empowers you to take full control of your computer's network resources.
 
-Key Features
+## Key Features
 
 Real-Time Monitoring: Stay up-to-date with real-time information on IP Addresses, Ports, Applications, PIDs, Sent Bytes, Received Bytes, City Origins, Country Origins, ASN Origins, Hosts, NICs, & Users associated with each connection.
 
