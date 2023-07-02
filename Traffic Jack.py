@@ -50,7 +50,7 @@ import tkinter.simpledialog as simpledialog
 global dev_mode
 global version
 dev_mode = True
-version = '1.0.0'
+version = '1.0.1'
 
 # DEV
 
@@ -3406,7 +3406,9 @@ def update_table():
                     
                     # SUBMIT IP TO HOST THREAD
 
-                    hosts_ip_dict.append(ip_address)
+                    if not static_mode:
+                        if not ip_address in hosts_ip_dict:
+                            hosts_ip_dict.append(ip_address)
                                        
                     # PROCESS ID & APPLICATION
                     
@@ -3857,7 +3859,10 @@ def update_table():
                         ip_obj = ipaddress.ip_address(ip_address)
                         if not ip_obj.is_private:
                             continue
-
+                    
+                    if not ip_address in hosts_ip_dict:
+                        hosts_ip_dict.append(ip_address)
+                    
                     isp_host = None
                     if enable_local_status:
                         isp_host = data_dict.get(key, {}).get('isp_host')
